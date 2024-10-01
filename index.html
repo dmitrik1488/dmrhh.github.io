@@ -109,34 +109,56 @@
         /* Секція переваг */
         .advantages-section {
             margin-top: 50px;
-            padding: 20px;
+            padding: 30px;
             background-color: rgba(0, 0, 0, 0.3);
             border-radius: 15px;
             text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
 
         .advantages-section h2 {
-            font-size: 1.8em;
+            font-size: 2em;
             margin-bottom: 20px;
+            color: #f1c40f;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .advantages-list {
             list-style-type: none;
             padding: 0;
+            text-align: left;
+            display: inline-block;
         }
 
         .advantages-list li {
-            font-size: 1.2em;
-            margin: 10px 0;
+            font-size: 1.4em;
+            margin: 15px 0;
+            padding-left: 25px;
+            position: relative;
         }
 
+        .advantages-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2em;
+            color: #2ecc71;
+        }
+
+        .discount {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #e74c3c;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Інформація про Джокера -->
         <div class="joker-info">
-            <img src="https://ibb.co/vXv2WxY" alt="Джокер">
+            <a href="https://ibb.co/vXv2WxY"><img src="https://i.ibb.co/GH3gDvT/4b17990d9149448ca88e990a2456827f.jpg" alt="4b17990d9149448ca88e990a2456827f" border="0" /></a>
             <h1>Джокер - Легендарний антигерой</h1>
             <p>
                 Джокер - один із найвідоміших персонажів коміксів, культова фігура в поп-культурі.
@@ -157,6 +179,13 @@
             <ul class="advantages-list">
                 <li>Найкраще ешкере</li>
                 <li>Швидка доставка</li>
-                <li>Літ енерджи</li>
-                <li>1488 жартів
-                
+                <li>Літ енерджи від Джокера</li>
+                <li>1488 жартів</li>
+            </ul>
+            <div class="discount">
+                <strong>Знижка 50%:</strong> Всього $9.99 (замовляйте зараз!)
+            </div>
+        </div>
+    </div>
+</body>
+</html>
