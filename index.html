@@ -11,7 +11,21 @@
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #2c3e50, #fd746c);
             color: white;
+            animation: backgroundAnimation 10s infinite alternate;
         }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background: linear-gradient(135deg, #2c3e50, #fd746c);
+            }
+            50% {
+                background: linear-gradient(135deg, #8e44ad, #3498db);
+            }
+            100% {
+                background: linear-gradient(135deg, #16a085, #f39c12);
+            }
+        }
+
         .container {
             width: 90%;
             max-width: 800px;
@@ -21,27 +35,46 @@
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
+
         .joker-info {
             text-align: center;
             margin-bottom: 30px;
         }
+
         img {
             width: 200px;
             border-radius: 10px;
             margin-bottom: 20px;
         }
+
         h1 {
             font-size: 2em;
             margin-bottom: 10px;
+            animation: colorChange 5s infinite alternate;
         }
+
+        @keyframes colorChange {
+            0% {
+                color: white;
+            }
+            50% {
+                color: #f1c40f;
+            }
+            100% {
+                color: #e74c3c;
+            }
+        }
+
         p {
             font-size: 1.2em;
             line-height: 1.6;
         }
+
         .order-section {
             text-align: center;
             margin-top: 40px;
         }
+
         .order-button {
             background-color: #e74c3c;
             color: white;
@@ -51,10 +84,52 @@
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s;
+            animation: buttonAnimation 3s infinite alternate;
         }
+
+        @keyframes buttonAnimation {
+            0% {
+                background-color: #e74c3c;
+                color: white;
+            }
+            50% {
+                background-color: #f39c12;
+                color: black;
+            }
+            100% {
+                background-color: #2ecc71;
+                color: white;
+            }
+        }
+
         .order-button:hover {
             background-color: #c0392b;
         }
+
+        /* Секція переваг */
+        .advantages-section {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .advantages-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .advantages-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .advantages-list li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
     </style>
 </head>
 <body>
@@ -75,6 +150,13 @@
             <h2>Замовити Джокера додому за $9.99</h2>
             <button class="order-button">Замовити</button>
         </div>
-    </div>
-</body>
-</html>
+
+        <!-- Блок переваг -->
+        <div class="advantages-section">
+            <h2>Переваги замовлення</h2>
+            <ul class="advantages-list">
+                <li>Найкраще ешкере</li>
+                <li>Швидка доставка</li>
+                <li>Літ енерджи</li>
+                <li>1488 жартів
+                
