@@ -8,19 +8,22 @@
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #2c3e50, #fd746c);
             font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #fd746c);
+            color: white;
         }
         .container {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.2);
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .joker-info {
+            text-align: center;
+            margin-bottom: 30px;
         }
         img {
             width: 200px;
@@ -28,8 +31,16 @@
             margin-bottom: 20px;
         }
         h1 {
-            color: white;
-            margin-bottom: 20px;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .order-section {
+            text-align: center;
+            margin-top: 40px;
         }
         .order-button {
             background-color: #e74c3c;
@@ -48,9 +59,23 @@
 </head>
 <body>
     <div class="container">
-        <img src="https://via.placeholder.com/200x300.png?text=Joker" alt="Джокер">
-        <h1>Замовити Джокера додому за $9.99</h1>
-        <button class="order-button">Замовити</button>
+        <!-- Інформація про Джокера -->
+        <div class="joker-info">
+            <img src="https://via.placeholder.com/200x300.png?text=Joker" alt="Джокер">
+            <h1>Джокер - Легендарний антигерой</h1>
+            <p>
+                Джокер - один із найвідоміших персонажів коміксів, культова фігура в поп-культурі.
+                Його харизма та хаотична природа роблять його унікальним персонажем. Він не тільки ворог Бетмена,
+                але й уособлення безумства і непередбачуваності. Якщо ви любите незвичайні події, Джокер - саме те,
+                що вам потрібно для вечірки або незабутнього сюрпризу.
+            </p>
+        </div>
+
+        <!-- Блок для замовлення -->
+        <div class="order-section">
+            <h2>Замовити Джокера додому за $9.99</h2>
+            <button class="order-button">Замовити</button>
+        </div>
     </div>
 </body>
 </html>
