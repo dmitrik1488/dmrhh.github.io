@@ -3,59 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Замовити Джокера додому</title>
+    <title>Замовити Джокера</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(45deg, #ff4b2b, #ff416c);
-            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #fff;
+            height: 100vh;
+            background: linear-gradient(135deg, #2c3e50, #fd746c);
+            font-family: Arial, sans-serif;
         }
-
         .container {
-            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.2);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
-
-        .joker-img {
-            max-width: 300px;
+        img {
+            width: 200px;
             border-radius: 10px;
+            margin-bottom: 20px;
         }
-
-        .order-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            background-color: #ff9f43;
-            color: #fff;
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .order-button {
+            background-color: #e74c3c;
+            color: white;
             border: none;
-            border-radius: 5px;
-            font-size: 18px;
+            padding: 15px 30px;
+            font-size: 16px;
             cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-
-        .order-btn:hover {
-            background-color: #ff6f00;
+        .order-button:hover {
+            background-color: #c0392b;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>Замовте Джокера додому</h1>
-        <img class="joker-img" src="joker.jpg" alt="Джокер">
-        <h2>Ціна: 9.99$</h2>
-        <a href="#" class="order-btn">Замовити зараз</a>
+        <img src="https://via.placeholder.com/200x300.png?text=Joker" alt="Джокер">
+        <h1>Замовити Джокера додому за $9.99</h1>
+        <button class="order-button">Замовити</button>
     </div>
-
 </body>
 </html>
